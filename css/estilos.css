@@ -1,0 +1,309 @@
+/*CABECERA */
+*{
+	
+	/*PROPIEDADES*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.container{  
+    max-width: 1450px;
+	   
+    margin: auto;
+}
+
+header{
+    background-image: url(../img/fondocabecera.png);
+}  
+     
+header .logo{   
+    margin:0px;   
+    padding:15px 0px;    
+    font-weight: bold;
+    color: #000038;    
+    font-size: 1.8em;
+	font-family: 'Roboto', sans-serif;
+ }
+
+header .container{    
+    display:flex;    
+    flex-direction: column;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav {   
+    display: flex;    
+    flex-direction: column;
+    text-align: center;    
+    padding-bottom: 25px;
+    flex-direction: row;
+    padding-bottom: 0;
+    
+}
+
+header a{    
+    padding: 5px 12px;    
+    text-decoration: none;
+    font-weight: bold;    
+    color:black}
+
+header a:hover{    
+    color:blue;}
+
+
+ 
+/* BANNER */
+
+.banner{
+	width: 100%;
+	height: 700px;
+	animation: banner 10s infinite linear alternate;
+	background-size: 100% 100%;
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes banner{
+	0%, 20%{
+		background-image: url(../img/baner1.jpg);
+	}
+	25%, 45%{
+		background-image: url(../img/baner2.webp);
+	}
+	50%, 70%{
+		background-image: url(../img/baner3.jpg);
+	}
+	75%, 100%{
+		background-image: url(../img/baner4.jpg);
+	}
+}
+.capa{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.6);
+}
+.info{
+	z-index: 1;
+	width: 100%;
+	max-width: 550px;
+	text-align: center;
+}
+.info h1{
+	color: #fff;
+	font-size: 50px;
+	margin-bottom: 20px;
+	letter-spacing: 3px;
+}
+.info p{
+	color: #c7c7c7;
+	line-height: 1.7;
+	margin-bottom: 30px;
+}
+.info a{
+	color: #fff;
+	text-decoration: none;
+	background: #3088e0;
+	padding: 16px 37px;
+	display: inline-block;
+	border-radius: 50px;
+}
+.info a:hover{    
+    color:rgb(0, 0, 0);}
+
+/*CONOCIMIENTOS*/
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+    margin: 0;
+}
+
+h1{
+    font-size: 3.5em;
+}
+
+h2{
+    font-size: 2.7em;
+}
+
+h3{
+    font-size: 2em;
+}
+
+p{
+    font-size: 1.2em;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    font-size: 1.25em;
+}
+
+button{
+    font-size: 1.25em;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 2px solid rgd(0,0,0,0.5);
+    color: rgb(255, 255, 255);
+    background-color: rgb(54, 54, 245);
+}
+
+button:hover{
+    background-color: rgb(74, 109, 233)
+}
+
+
+
+
+
+
+#programas {
+    background-color: rgb(30, 30,30);
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+#programas .container {
+    padding: 50px 12px;
+    }
+    
+    #programas p{
+    display: none;
+    }
+    
+    #programas h2{
+    margin-top: 0;
+    }
+    
+    #programas .carta{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+    
+    }
+    
+    .carta:first-child{
+    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url(../img/python1.png);
+    }
+    
+    .carta:nth-child(2){
+    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('../img/java.jpg');
+    }
+    
+    .carta:last-child{
+    background-image: linear-gradient(0deg,rgb(0,0,0,0.5),rgb(0,0,0,0.5)),url('../img/html-css.jpg');
+    }
+
+ 
+
+
+#programas .grupocartas{
+        display: flex;
+        justify-content: center;
+    }
+
+#programas p{
+        display: block;
+        margin-bottom: 30px;
+    }
+    
+    #programas h2{
+        font-size: 3em;
+        letter-spacing: 3px;
+    }
+    #programas h3{
+        margin-top: 0;
+    }
+
+/*informacion personal*/
+
+ 
+#somos .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#somos .container{
+	display: flex;
+	justify-content: space-evenly;
+}
+
+#somos .texto{
+	width: 50%;
+	max-width: 600px;
+	text-align: initial;
+	padding-left: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#somos h2{
+    letter-spacing: 3px;
+	margin-top: 0px;
+     
+}
+
+#somos .img_somos{
+	background-image: url(../img/informacionpersonal.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;        
+	width:500px;
+	height: 500px;
+
+}
+ 
+.resalta_texto{
+	color:blue;
+}
+
+/*JAVA*/
+.word { 
+    background-color: #283ad9;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    line-height: 1.4em;
+    height: 1.4em;
+    padding: 0 14px 0 7px;
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+  }
+  
+  .word:before {
+    content: '';
+    background-color: black;
+    width: 1px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    right: 7px;
+  }
+
+
+ 
+
+ 
+
+
+ 
+
+    
+    
